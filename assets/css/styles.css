@@ -12980,8 +12980,8 @@ a:hover {
     animation: spinner .4s linear infinite;
     opacity: 1;
     border: 2px solid transparent;
-    border-top-color: #1fb8b2;
-    border-left-color: #1fb8b2;
+    border-top-color: #da0074;
+    border-left-color: #fff;
     border-radius: 100%
 }
 
@@ -13307,7 +13307,7 @@ a:hover {
 }
 
 #about p {
-    font-size: 13px;
+    font-size: 18px;
     max-width: 610px;
     line-height: 1.5em;
     margin: 0 auto 38px;
