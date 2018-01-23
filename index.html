@@ -1,116 +1,443 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="robots" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Coming Soon / Under Construction</title>
-    <link rel="shortcut icon" href="assets/images/logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600|Raleway:300,400" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css"> </head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="Mini Glitch">
+    <meta name="keywords" content="Mini Glitch">
+    <meta name="author" content="unknown artist">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Mini Glitch</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/logo.png">
+
+
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
 
 <body>
-    <div id="main">
-        <div id="page-loader">
-            <div class="spinner-container">
-                <div class="css-spinner"></div>
-            </div>
-        </div>        
-        <section id="hero" class="hero hero-1">
-            <div class="front-content page-enter-animated">
-                <div class="container-mid">
-                    <img height=150 class="logo" src="assets/images/logo.png" alt="logo">
-                    <div class="cycle-wrapper">
-                        <div id="cycle">
-                            <div class="slide">
-                                <h1>COMING SOON</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="arrow-wrap go-down">
-                        <div class="open-overlay down-button">
-                            <i class="ti-arrow-down"></i>
-                            <i class="ti-arrow-down"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="background-content page-enter-animated">
-                <div class="level-1">
-                    <div class="bg-overlay"></div>
-                    <div class="bg-pattern"></div>
-                    <div id="canvas">
-                        <canvas class="bg-effect layer" data-depth="0.2"></canvas>
-                    </div>
-                </div>
-                <div class="level-2">
-                    <div class="bg-image layer" data-depth="0.04"></div>
-                    <div class="bg-video layer" data-depth="0.04"></div>
-                    <div class="bg-color layer" data-depth="0.04"></div>
-                </div>
-            </div>
-        </section>
-        <div id="overlay">
-            <section class="overlay">
-                <div id="about" class="content">
-                    <div class="container-mid">
-                        <div class="container">
-                            <h1>STAY POSTED</h1>
-                            <p> I am the ''glitch'' in the social media system. I encourage all my clients to be bold and different from their competition. My kind of social media is smart, fun, and it can influence things your way.</p>
-                            <form action="assets/php/subscribe.php" method="post"
-                                class="subscribe-form">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="input-group input-group-lg">
-                                            <input type="text" name="email" placeholder="* Enter your email to Subscribe!" class="email form-control">
-                                            <div class="fhp-input">
-                                                <input type="text" name="phone" placeholder="* Enter your phone to Subscribe!"
-                                                    class="email form-control">
-                                            </div>
-                                            <div class="input-group-btn">
-                                                <button type="submit" class="btn btn-primary form-control">
-                                                    <i class="ti-arrow-right first"></i>
-                                                    <i class="ti-arrow-right second"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                            <ul class="social-icons">
-                                <li>
-                                    <a data-placement="bottom" title="Facebook" class="ti-facebook" href="https://www.facebook.com/MiniGlitch-248612995670290/">
-                                        <div class="overlay"></div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-placement="bottom" title="Instagram" class="ti-instagram" href="https://www.instagram.com/miniglitch/">
-                                        <div class="overlay"></div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-placement="bottom" title="LinkedIn" class="ti-linkedin" href="https://www.linkedin.com/company/18310050/">
-                                        <div class="overlay"></div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a data-placement="bottom" title="Mail" class="ti-email" href="#">
-                                        <div class="overlay"></div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>            
-            <div class="up-button go-up">
-                <i class="ti-arrow-up"></i>
-                <i class="ti-arrow-up"></i>
-            </div>
+
+    <!-- PRE LOADER -->
+    <div class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
         </div>
     </div>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+
+
+    <!-- HOME SECTION -->
+    <section id="home" class="parallax-section">
+        <!-- OVERLAY -->
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <h1>Hey there,</h1>
+                    <div class="element">
+                        <div class="sub-element">I am a Creative.</div>
+                        <div class="sub-element">I am a Social Media Manager.</div>
+                        <div class="sub-element">I am an Influencer.</div>
+                    </div>
+                    <!-- BUTTON -->
+                    <a href="#portfolio" id="myworks" class="smoothScroll btn btn-default section-btn">MY WORKS</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- NAVIGATION SECTION -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
+
+            <!-- NAVBAR HEADER -->
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <!-- lOGO TEXT HERE -->
+                <a href="index.html" id="minibrand" class="navbar-brand">Mini
+                    <strong>Glit</strong>ch</a>
+            </div>
+
+            <!-- NAVIGATION LINKS -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="smoothScroll" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="smoothScroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="smoothScroll" href="#portfolio">Work</a>
+                    </li>
+                    <li>
+                        <a class="smoothScroll" href="#pricing">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="smoothScroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="parallax-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8 col-sm-12">
+                    <div class="about-thumb">
+                        <h2>about MiniGlitch ..</h2>
+                        <p>I am Larisa, a multi-focused creative and influencer working on social media content for startups
+                            and businesses. MiniGlitch is the personal brand I created in order to offer smart, fun and simple
+                            social media ideas. </p>
+
+                        <!-- BUTTON -->
+                        <div id="schedulebutton">
+                                <a href="#contact" class="btn btn-primary section-btn smoothScroll">Schedule a meeting</a>
+                        </div>
+                        <a href="https://www.linkedin.com/in/larisa-b%C4%83lan/" target="_blank" class="btn btn-success section-btn">LinkedIn Profile</a>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <!-- ABOUT IMAGE -->
+                    <div class="about-image">
+                        <img src="images/about-image.jpg" class="img-responsive" alt="About Image">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICE SECTION -->
+    <section id="service" class="parallax-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-6">
+                    <!-- SERVICE THUMB -->
+                    <div class="service-thumb">
+                        <div id="instagram" class="icons"></div>
+                        <h4>Social Media</h4>
+                        <p>I manage the right social media platforms for your business, taking care of communities and advertising.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <!-- SERVICE THUMB -->
+                    <div class="service-thumb">
+                        <div id="shirt" class="icons"></div>
+
+                        <h4>Branding & Identity </h4>
+                        <p>I will come up with cool ideas in order to shape the perfect brand identity. </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <!-- SERVICE THUMB -->
+                    <div class="service-thumb">
+                        <div id="edit-tools" class="icons"></div>
+                        <h4>Creation </h4>
+                        <p>Even if it’s a graphic design for an Instagram post, or a web banner, you will always have an awesome
+                            digital product. </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <!-- SERVICE THUMB -->
+                    <div class="service-thumb">
+                        <div id="programming" class="icons"></div>
+                        <h4>UI Design </h4>
+                        <p>If you are looking for a responsive website, or a dedicated app, you’ve come to the right place.
+                            </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="parallax-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <h2>Work</h2>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- PORTFOLIO THUMB -->
+                    <div class="portfolio-thumb">
+                        <a href="images/portofoliu/1.png" class="image-popup">
+                                <div class="portfolio-thumb-overlay">
+                                    <i class="fa fa-search"></i>
+                                </div>
+
+                            <img src="images/portofoliu/1.png" class="img-responsive" alt="Portfolio Image">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- PORTFOLIO THUMB -->
+                    <div class="portfolio-thumb">
+                        <a href="images/portofoliu/2.png" class="image-popup">
+                            <div class="portfolio-thumb-overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="images/portofoliu/2.png" class="img-responsive" alt="Portfolio Image">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- PORTFOLIO THUMB -->
+                    <div class="portfolio-thumb">
+                        <a href="images/portofoliu/3.png" class="image-popup">
+                            <div class="portfolio-thumb-overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="images/portofoliu/3.png" class="img-responsive" alt="Portfolio Image">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- PORTFOLIO THUMB -->
+                    <div class="portfolio-thumb">
+                        <a href="images/portofoliu/4.png" class="image-popup">
+                            <div class="portfolio-thumb-overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="images/portofoliu/4.png" class="img-responsive" alt="Portfolio Image">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- PORTFOLIO THUMB -->
+                    <div class="portfolio-thumb">
+                        <a href="images/portofoliu/5.png" class="image-popup">
+                            <div class="portfolio-thumb-overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="images/portofoliu/5.png" class="img-responsive" alt="Portfolio Image">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- PORTFOLIO THUMB -->
+                    <div class="portfolio-thumb">
+                        <a href="images/portofoliu/6.png" class="image-popup">
+                            <div class="portfolio-thumb-overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="images/portofoliu/6.png" class="img-responsive" alt="Portfolio Image">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PRICING TABLE -->
+    <section id="pricing" class="parallax-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <h2 id="priceplan">Pricing</h2>
+                </div>
+
+                <div class="promos">  
+                    <div class="promo second">
+                        <h4>Startup</h4>
+                        <ul class="features">
+                            <li class="brief">Starting from</li>
+                            <li class="price">200 €/month</span></li>
+                            <li>Newbie Package</li>
+                            <li>Graphic design </li>
+                            <li>Client must provide high res photos </li>
+                            <li>1 Instagram business page + 75€</li>
+                            <!--<li class="buy">-->
+                                <!--<div id="schedulebutton">-->
+                                    <!--<a href="#contact" class="btn btn-primary section-btn smoothScroll">Sign Up</a>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                    <div class="promo first">
+                        <h4>Newbie </h4>
+                        <ul class="features">
+                            <li class="brief">Starting from</li>
+                            <li class="price">100 €/month</li>
+                            <li>1 Facebook business page </li>
+                            <li>3-5 posts/week </li>
+                            <!--<li>Strategy + Ads management </li>-->
+                            <li>Client must provide content </li>
+                            <li>1 Instagram business page + 50 €</li>
+                            <!--<li class="buy">-->
+                                <!--<div id="schedulebutton">-->
+                                    <!--<a href="#contact" class="btn btn-primary section-btn smoothScroll">Sign Up</a>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>
+                    <div class="promo third scale">
+                        <h4>Pro </h4>
+                        <ul class="features">
+                            <li class="brief">Starting from  </li>
+                            <li class="price">300 €/month</li>
+                            <li>Startup package </li>
+                            <li>Professional photo shooting  </li>
+                            <li></li>
+                            <li>1 Instagram business page + 100 €</li>
+                            <!--<li class="buy">-->
+                                <!--<div id="schedulebutton">-->
+                                    <!--<a href="#contact" class="btn btn-primary section-btn smoothScroll">Sign Up</a>-->
+                                <!--</div>-->
+                            <!--</li>-->
+                        </ul>
+                    </div>  
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="parallax-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <h2>Get in touch</h2>
+                </div>
+
+                <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <!-- CONTACT FORM HERE -->
+                    <form id="contact-form" role="form" action="https://www.enformed.io/xjcloe46" method="POST">
+
+                        <!-- IF MAIL SENT SUCCESSFULLY -->
+                        <h6 class="text-success">Your message has been sent successfully. </h6>
+
+                        <!-- IF MAIL SENDING UNSUCCESSFULL -->
+                        <h6 class="text-danger">E-mail must be valid and message must be longer than 1 character.</h6>
+
+                        <div class="col-md-4 col-sm-4">
+                            <input type="text" class="form-control" id="cf-name" name="cf-name" placeholder="Name">
+                        </div>
+
+                        <div class="col-md-4 col-sm-4">
+                            <input type="email" class="form-control" id="cf-email" name="email" placeholder="Email">
+                        </div>
+
+                        <div class="col-md-4 col-sm-4">
+                            <input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Subject">
+                        </div>
+
+                        <div class="col-md-12 col-sm-12">
+                            <textarea class="form-control" rows="7" id="cf-message" name="cf-message" placeholder="Message"></textarea>
+                        </div>
+
+                        <div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4">
+                            <button type="submit" class="form-control" id="cf-submit" name="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <!-- SOCIAL ICON -->
+                    <ul class="social-icon">
+                        <li>
+                            <a href="https://twitter.com/mGlitch_social" target="_blank" class="fa fa-twitter"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/MiniGlitch.social" target="_blank"  class="fa fa-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/miniglitch" target="_blank" class="fa fa-instagram"></a>
+                        </li>
+                        <li>
+                            <a href="https://pinterest.com/miniglitch/" target="_blank" class="fa fa-pinterest"></a>
+                        </li>
+                    </ul>
+
+                    <p>Copyright © 2018 Mini Glitch | All Rights Reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Back top -->
+    <a href="#back-top" class="go-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/typed-options.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+
+    <script src="js/custom.js"></script>
+
 </body>
 
 </html>

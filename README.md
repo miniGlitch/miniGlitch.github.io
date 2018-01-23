@@ -1,1 +1,0 @@
-# miniGlitch.github.io
